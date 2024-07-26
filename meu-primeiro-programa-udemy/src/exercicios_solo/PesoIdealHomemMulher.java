@@ -10,16 +10,16 @@ public class PesoIdealHomemMulher {
         int sexo = scanner.nextInt();
 
 
-        System.out.println("Agora, digite a sua altura: ");
+        System.out.println("Agora, digite a sua altura (em metros): ");
         double altura = scanner.nextDouble();
 
         double formulaHomem = (72.7 * altura) - 58;
         double formulaMulher = (62.1 * altura) - 44.7;
 
         if(sexo == 1){
-            System.out.println("O seu peso ideal é: " + formulaMulher);
+            System.out.println("O seu peso ideal é: " + formulaMulher + " kg.");
         } else {
-            System.out.println("O seu peso ideal é: " + formulaHomem);
+            System.out.println("O seu peso ideal é: " + formulaHomem + " kg.");
         }
         scanner.close();
     }
